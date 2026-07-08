@@ -30,6 +30,7 @@ jobs:
       - name: 🚀 Run login script
         env:
           ACCOUNTS_BATCH: ${{ secrets.ACCOUNTS_BATCH }}
+          PYTHONIOENCODING: utf-8
         run: |
           python login.py
 
